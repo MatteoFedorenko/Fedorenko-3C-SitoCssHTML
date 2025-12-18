@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 { color: #1e293b; margin-top: 0; }
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.radio-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    color: #475569;
+}
+
+.result-box {
+    font-size: 1.5rem;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px dashed #bfdbfe;
+    margin-bottom: 20px;
+    word-break: break-all;
+    min-height: 1.5em;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-gen {
+    background: #2563eb;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-gen:hover { background: #1d4ed8; }
+
+.btn-save {
+    background: #10b981;
+    color: white;
+}
+
+.btn-save:hover { background: #059669; }
+
+.history {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.history h3 {
+    font-size: 1rem;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-family: monospace;
+    animation: slideIn 0.3s ease-out;
+}
+
+.item-number {
+    color: #94a3b8;
+    font-weight: bold;
+    margin-right: 12px;
+    min-width: 25px;
+}
+
+.item-text {
+    color: #334155;
+    font-size: 1rem;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}

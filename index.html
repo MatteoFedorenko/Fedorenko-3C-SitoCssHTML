@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ing">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo's Generator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Generator</h2>
+    
+    <div class="options">
+        <label class="radio-label">
+            <input type="radio" name="mode" value="pass" checked>
+            <span>Password</span>
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="mode" value="nick">
+            <span>NickName</span>
+        </label>
+    </div>
+
+    <div id="display" class="result-box">Click "Create"</div>
+    
+    <div class="controls">
+        <button class="btn-gen" onclick="generate()">Create</button>
+        <button class="btn-save" onclick="save()">Save</button>
+    </div>
+
+    <div class="history">
+        <h3>Saved results:</h3>
+        <div id="historyList"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
